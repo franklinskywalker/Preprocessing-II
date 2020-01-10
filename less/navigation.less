@@ -1,1 +1,36 @@
 // Navigation Styles here
+
+.header{
+   
+    border-bottom: 2px dashed @navigation-border;
+    padding: 2%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    
+    .navigation {
+        
+        width: 50%;
+       
+        .nav-layout-row(space-around, center);
+
+        a {
+            text-decoration: none;
+            font-size: 2.5rem;
+            color: @shark ;
+        }
+
+        @media @small {
+            display: flex;
+         }
+       
+        
+    }
+
+    @media @small {
+        .column-layout-nav(center, center);
+     }
+   
+}
+    
+    

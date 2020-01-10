@@ -1,1 +1,27 @@
 // Mixins in here
+.column-layout(@justify, @align){
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: @justify;
+    align-items: @align;
+}
+.column-layout-nav(@justify, @align){
+    display: flex;
+    flex-direction: column;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.nav-layout-row(@justify, @align){
+    display: flex;
+    flex-direction: row;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.test(){
+    border: dotted black 1px;
+}
+
+
+  
